@@ -1,6 +1,7 @@
 # reaper — v1 Issue Plan
 
 Status: authoritative execution plan derived from [DESIGN.md](./DESIGN.md). GitHub Issues are generated from `docs/issues/*.md`; when they drift, these files win.
+GitHub Issues #2–#36 were created from these drafts on 2026-07-10 (plan NN ↔ GitHub #NN+1).
 
 ## 1. v1 completion statement
 
@@ -18,43 +19,43 @@ No v1 product behavior exists outside this plan except newly discovered implemen
 
 ## 2. Issue list in recommended execution order
 
-| # | Issue file | Title (short) | Size | Wave |
-|---|---|---|---|---|
-| 01 | issues/01-project-bootstrap.md | Toolchain + CI scaffold | M | W0 |
-| 02 | issues/02-finding-model-and-fingerprint.md | Finding model + fingerprint | M | W0 |
-| 03 | issues/03-config-schema-and-loader.md | Config loader + safety floors | M | W0 |
-| 04 | issues/04-cli-skeleton.md | CLI skeleton + init | M | W0 |
-| 05 | issues/05-subprocess-runner.md | Hardened ExecRunner | M | W0 |
-| 06 | issues/06-workspace-discovery.md | Workspace discovery | M | W0 |
-| 07 | issues/07-adapter-contract-and-registry.md | Adapter contract + kit | M | W1 |
-| 08 | issues/08-knip-adapter.md | knip adapter | M | W1 |
-| 09 | issues/09-vulture-adapter.md | vulture adapter | S | W1 |
-| 10 | issues/10-deptry-adapter.md | deptry adapter | S | W1 |
-| 11 | issues/11-go-deadcode-adapter.md | go-deadcode adapter | M | W1 |
-| 12 | issues/12-go-mod-deps-adapter.md | go-mod-deps adapter | M | W1 |
-| 13 | issues/13-doctor-command.md | doctor command | S | W1 |
-| 14 | issues/14-signal-framework.md | Signal framework + S7/S11 | M | W2 |
-| 15 | issues/15-string-reference-verifier.md | String-reference verifier | L | W2 |
-| 16 | issues/16-dynamic-usage-scanner.md | Dynamic-usage scanner | M | W2 |
-| 17 | issues/17-entrypoint-heuristics-ts.md | TS entrypoint pack | M | W2 |
-| 18 | issues/18-entrypoint-heuristics-python.md | Python entrypoint pack | M | W2 |
-| 19 | issues/19-entrypoint-heuristics-go.md | Go entrypoint pack | S | W2 |
-| 20 | issues/20-suppression-and-keep-annotations.md | Suppression collector | M | W2 |
-| 21 | issues/21-confidence-scoring-engine.md | Scoring engine | M | W2 |
-| 22 | issues/22-decision-policy-engine.md | Policy engine | M | W2 |
-| 23 | issues/23-removal-engine-and-file-deletion.md | Removal core + file delete | M | W3 |
-| 24 | issues/24-ts-symbol-removal.md | TS symbol removal | L | W3 |
-| 25 | issues/25-python-symbol-removal.md | Python symbol removal | L | W3 |
-| 26 | issues/26-dependency-removal.md | Dependency removal | L | W3 |
-| 27 | issues/27-verify-gate.md | Verify gate | M | W3 |
-| 28 | issues/28-git-worktree-layer.md | Git worktree layer | M | W3 |
-| 29 | issues/29-github-pr-publisher.md | PR publisher + dedupe | L | W4 |
-| 30 | issues/30-report-renderers.md | Report renderers + explain | M | W4 |
-| 31 | issues/31-scan-and-propose-pipelines.md | Pipeline integration | L | W4 |
-| 32 | issues/32-github-action.md | GitHub Action | M | W4 |
-| 33 | issues/33-e2e-fixture-suite.md | E2E fixtures + precision gate | L | W5 |
-| 34 | issues/34-user-docs-and-security-policy.md | User docs + SECURITY.md | M | W5 |
-| 35 | issues/35-release-pipeline-and-hardening.md | Release + hardening | M | W5 |
+| # | Issue file | Title (short) | Size | Wave | GitHub |
+|---|---|---|---|---|---|
+| 01 | issues/01-project-bootstrap.md | Toolchain + CI scaffold | M | W0 | [#2](https://github.com/Saber5656/reaper/issues/2) |
+| 02 | issues/02-finding-model-and-fingerprint.md | Finding model + fingerprint | M | W0 | [#3](https://github.com/Saber5656/reaper/issues/3) |
+| 03 | issues/03-config-schema-and-loader.md | Config loader + safety floors | M | W0 | [#4](https://github.com/Saber5656/reaper/issues/4) |
+| 04 | issues/04-cli-skeleton.md | CLI skeleton + init | M | W0 | [#5](https://github.com/Saber5656/reaper/issues/5) |
+| 05 | issues/05-subprocess-runner.md | Hardened ExecRunner | M | W0 | [#6](https://github.com/Saber5656/reaper/issues/6) |
+| 06 | issues/06-workspace-discovery.md | Workspace discovery | M | W0 | [#7](https://github.com/Saber5656/reaper/issues/7) |
+| 07 | issues/07-adapter-contract-and-registry.md | Adapter contract + kit | M | W1 | [#8](https://github.com/Saber5656/reaper/issues/8) |
+| 08 | issues/08-knip-adapter.md | knip adapter | M | W1 | [#9](https://github.com/Saber5656/reaper/issues/9) |
+| 09 | issues/09-vulture-adapter.md | vulture adapter | S | W1 | [#10](https://github.com/Saber5656/reaper/issues/10) |
+| 10 | issues/10-deptry-adapter.md | deptry adapter | S | W1 | [#11](https://github.com/Saber5656/reaper/issues/11) |
+| 11 | issues/11-go-deadcode-adapter.md | go-deadcode adapter | M | W1 | [#12](https://github.com/Saber5656/reaper/issues/12) |
+| 12 | issues/12-go-mod-deps-adapter.md | go-mod-deps adapter | M | W1 | [#13](https://github.com/Saber5656/reaper/issues/13) |
+| 13 | issues/13-doctor-command.md | doctor command | S | W1 | [#14](https://github.com/Saber5656/reaper/issues/14) |
+| 14 | issues/14-signal-framework.md | Signal framework + S7/S11 | M | W2 | [#15](https://github.com/Saber5656/reaper/issues/15) |
+| 15 | issues/15-string-reference-verifier.md | String-reference verifier | L | W2 | [#16](https://github.com/Saber5656/reaper/issues/16) |
+| 16 | issues/16-dynamic-usage-scanner.md | Dynamic-usage scanner | M | W2 | [#17](https://github.com/Saber5656/reaper/issues/17) |
+| 17 | issues/17-entrypoint-heuristics-ts.md | TS entrypoint pack | M | W2 | [#18](https://github.com/Saber5656/reaper/issues/18) |
+| 18 | issues/18-entrypoint-heuristics-python.md | Python entrypoint pack | M | W2 | [#19](https://github.com/Saber5656/reaper/issues/19) |
+| 19 | issues/19-entrypoint-heuristics-go.md | Go entrypoint pack | S | W2 | [#20](https://github.com/Saber5656/reaper/issues/20) |
+| 20 | issues/20-suppression-and-keep-annotations.md | Suppression collector | M | W2 | [#21](https://github.com/Saber5656/reaper/issues/21) |
+| 21 | issues/21-confidence-scoring-engine.md | Scoring engine | M | W2 | [#22](https://github.com/Saber5656/reaper/issues/22) |
+| 22 | issues/22-decision-policy-engine.md | Policy engine | M | W2 | [#23](https://github.com/Saber5656/reaper/issues/23) |
+| 23 | issues/23-removal-engine-and-file-deletion.md | Removal core + file delete | M | W3 | [#24](https://github.com/Saber5656/reaper/issues/24) |
+| 24 | issues/24-ts-symbol-removal.md | TS symbol removal | L | W3 | [#25](https://github.com/Saber5656/reaper/issues/25) |
+| 25 | issues/25-python-symbol-removal.md | Python symbol removal | L | W3 | [#26](https://github.com/Saber5656/reaper/issues/26) |
+| 26 | issues/26-dependency-removal.md | Dependency removal | L | W3 | [#27](https://github.com/Saber5656/reaper/issues/27) |
+| 27 | issues/27-verify-gate.md | Verify gate | M | W3 | [#28](https://github.com/Saber5656/reaper/issues/28) |
+| 28 | issues/28-git-worktree-layer.md | Git worktree layer | M | W3 | [#29](https://github.com/Saber5656/reaper/issues/29) |
+| 29 | issues/29-github-pr-publisher.md | PR publisher + dedupe | L | W4 | [#30](https://github.com/Saber5656/reaper/issues/30) |
+| 30 | issues/30-report-renderers.md | Report renderers + explain | M | W4 | [#31](https://github.com/Saber5656/reaper/issues/31) |
+| 31 | issues/31-scan-and-propose-pipelines.md | Pipeline integration | L | W4 | [#32](https://github.com/Saber5656/reaper/issues/32) |
+| 32 | issues/32-github-action.md | GitHub Action | M | W4 | [#33](https://github.com/Saber5656/reaper/issues/33) |
+| 33 | issues/33-e2e-fixture-suite.md | E2E fixtures + precision gate | L | W5 | [#34](https://github.com/Saber5656/reaper/issues/34) |
+| 34 | issues/34-user-docs-and-security-policy.md | User docs + SECURITY.md | M | W5 | [#35](https://github.com/Saber5656/reaper/issues/35) |
+| 35 | issues/35-release-pipeline-and-hardening.md | Release + hardening | M | W5 | [#36](https://github.com/Saber5656/reaper/issues/36) |
 
 Size: S ≈ half day, M ≈ 1 day, L ≈ 2 days for a focused implementation agent.
 
